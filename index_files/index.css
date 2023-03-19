@@ -1,0 +1,310 @@
+/*Background*/
+body{
+	background-image: url(Pacific_ocean_best_beaches-Nature_Photo_HD_Wallpaper_1920x1440.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+/*Navigateur d'entête*/
+li{
+	display: inline-block;
+	text-decoration: none;
+	padding: 1.5%;
+	color: rgba(148, 11, 11, 0.575);
+	flood-color: inherit,serif, sans-serif;
+	font-size: 100%;
+}
+span.right{
+	padding-left: 35%;
+}
+/*Navigateur principal*/
+* {
+	box-sizing: border-box;
+}
+nav#menu ul {
+	background-color: #333333;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: serif,sans-serif;
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 2px;
+	border-left: none;
+	border-right: none;
+	margin-top: 1%;
+}
+nav#menu li{
+	display: inline-block;
+	margin: 1%;
+	padding:0;
+	font-family: serif,sans-serif;
+}
+#menu li a {
+	background-color: black;
+	color: #FFFFFF;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	font-family: serif,sans-serif;
+}
+nav#menu li a:hover {
+	color: #1b4359;
+}
+/* ss menu */
+nav#menu ul li ul {
+	opacity: 0;
+	margin-left:-5%;
+	visibility: hidden;
+	z-index: 5;
+	transition: all 0.25s ease 0s;
+	border-top: none;
+	margin: 0;
+	/* display:none; */
+}
+nav#menu li ul li{
+		display: block;
+		margin: 0;
+}
+nav#menu ul li a {
+	  background-color: gray;
+}
+nav#menu ul li:hover ul {
+	  opacity: 1;
+		margin-left:0;
+	  visibility: visible;
+}
+nav#menu ul li ul {
+ position:absolute;
+}
+a.left-box{
+	color: burlywood;
+	flood-color: inherit,serif, sans-serif;
+	font-size: 200%;
+	display: inline-block;
+	text-decoration: none;
+	align-items: center;
+	margin-right: 30%;
+	font-family: sans-serif,serif, inherit;
+	letter-spacing: 2px;
+	margin-bottom: 0;
+}
+/*Logo animation*/
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+div.title{
+	text-align: center;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	top: 50%;
+	left: 50%;
+}
+div.title span.text2{
+	display: block;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #1b4359;
+	font-weight: bold;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-family: inherit,sans-serif,serif;
+	letter-spacing: 2px;
+
+}
+span.text1{
+	color: white;
+	font-size: 60px;
+	letter-spacing: 8px;
+	padding-left: 25px;
+	padding: 12px;
+	margin-bottom: 10px;
+	font-weight: 700;
+	position: relative;
+	animation: text 3s 1;
+	background: #333;
+	background-position: center;
+	position: relative;
+	display: inline-block;
+	border-style: solid;
+	border-color: white;
+	border-width: 0.5px;
+	border-radius: 2px;
+}
+@keyframes text{
+	0%{
+		color: #1b4359;
+		margin-bottom: -60px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing: 9px;
+		margin-bottom: -40px;
+	}
+}
+/*Carte 1*/
+
+div.cardcontainer{
+	position: absolute;
+	width: 250px;
+	height: 380px;
+	top: 50%;
+	left: 5%;
+	transform: translate(-50%,-50%);
+	margin-top: 300px;
+	margin-left: 100px;
+}
+div.carte{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 1s ease;
+}
+div.devant{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	background-image: url(hublot1.jpg);
+	color: white;
+	text-align: center;
+	font-family: sans-serif,serif;
+	border-radius: 50px;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+span.averto{
+    color: black;
+    font-size: 12px;
+}
+div.derriere{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	background-image: url(image\ \(1\).jpg);
+	color: white;
+	text-align: center;
+	font-family: sans-serif,serif;
+	border-radius: 50px;
+	font-weight: bolder;
+	font-size: 20px;
+	transform: rotateY(180deg);
+}
+
+div.carte:hover{
+	transform: rotateY(180deg);
+}
+
+/*Carte 2*/
+
+div.cardcontainer2{
+	position: absolute;
+	width: 250px;
+	height: 380px;
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+	margin-top: 300px;
+	margin-left: 100px;
+}
+div.carte2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 1s ease;
+}
+div.devant2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	text-align: center;
+	font-family: sans-serif,serif;
+	border-radius: 50px;
+	font-weight: bolder;
+	font-size: 20px;
+	background-position: 50%;
+}
+
+div.derriere2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	color: white;
+	text-align: center;
+	font-family: sans-serif,serif;
+	border-radius: 50px;
+	font-weight: bolder;
+	font-size: 20px;
+	transform: rotateY(180deg);
+}
+
+div.carte2:hover{
+	transform: rotateY(180deg);
+}
+
+/*membres*/
+
+div.members{
+	margin-top: 800px;
+	margin-left: 100px;
+}
+div.member1{
+	width: 300px;
+	height: 320px;
+	float: left;
+	border-radius: 30px;
+	border-style: solid;
+	border-color: white;
+	margin-top: -100px;
+}
+
+div.member2{
+	width: 300px;
+	height: 320px;
+	float: right;
+	border-radius: 30px;
+	border-style: solid;
+	border-color: white;
+	margin-right: 150px;
+	margin-top: -100px;
+}
+span.qui{
+	font-size: 21px;
+	text-align: center;
+	padding-bottom: 30px;
+	color: #1b4359;
+	font-family: sans-serif;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-weight: bold;
+
+}
+div.nom1{
+	padding-top: 10px;
+	padding-left: 110px;
+	color: #1b4359;
+	font-size: 21px;
+	font-weight: bold;
+	float: left;
+}
+div.nom2{
+	padding-top: 10px;
+	padding-right: 230px;
+	color: #1b4359;
+	font-size: 21px;
+	font-weight: bold;
+	float: right;
+}
+
+
